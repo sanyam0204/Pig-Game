@@ -43,7 +43,7 @@ const fnhold = function () {
     scores[active] += curscore;
     score0.textContent = scores[0];
     score1.textContent = scores[1];
-    if (scores[active] >= 10) {
+    if (scores[active] >= 100) {
       playing = false;
       btnhold.classList.add('hidden');
       btnroll.classList.add('hidden');
