@@ -76,14 +76,14 @@ const fnnew = function () {
   playing = true;
   scores = [0, 0];
   active = 0;
-  document.querySelector('.player--0').classList.add('player--active');
-  document.querySelector('player--1').classList.remove('player--active');
   document.querySelector(`.player--0`).classList.remove('player--winner');
   document.querySelector(`.player--1`).classList.remove('player--winner');
   score0.textContent = scores[0];
   score1.textContent = scores[1];
   current0.textContent = curscore;
   current1.textContent = curscore;
+  document.querySelector('.player--1').classList.remove('player--active');
+  document.querySelector('.player--0').classList.add('player--active');
 };
 
 dice.classList.add('hidden');
